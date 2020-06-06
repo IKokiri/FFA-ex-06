@@ -1,0 +1,10 @@
+<search-component (respostaFamilia)="onChange($event)"></search-component>
+<div>
+  <li *ngFor="let movie of moviesTela">
+    <img-component imagePath="{{movie.poster_path}}"></img-component>
+
+    <texto-component texto="{{movie.original_title}}"></texto-component>
+
+    <a routerLink="movies/{{movie.id}}">Detalhes</a>
+  </li>
+</div>
